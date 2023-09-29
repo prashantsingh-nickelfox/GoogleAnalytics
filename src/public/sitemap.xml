@@ -1,0 +1,1 @@
+  fs.writeFileSync(path.join(publicPath, 'sitemap.xml'), sitemapXML);

@@ -1,3 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Sitemap: https://melodic-stroopwafel-b20ae9.netlify.app//sitemap.xml
+
