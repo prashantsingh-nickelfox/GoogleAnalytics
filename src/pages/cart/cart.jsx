@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 import { PRODUCTS } from "../../products";
 import { CartItem } from "./cart-item";
@@ -11,7 +11,6 @@ export const Cart = () => {
 
   const navigate = useNavigate();
 
-
   return (
     <div className="cart">
       <div>
@@ -20,8 +19,9 @@ export const Cart = () => {
       <div className="cart">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
+            return <CartItem data={product} key={product.id} />;
           }
+          return null;
         })}
       </div>
 
