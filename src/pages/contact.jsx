@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export const Contact = () => {
- 
   return <div>contact</div>;
 };
